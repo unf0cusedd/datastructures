@@ -7,11 +7,11 @@ class Node:
 class LinkedList:
     def __init__(self):  
         self.start = None 
-        self.length = 0
+        self.lngth = 0
     
     def add(self, value):  
         self.start = Node(value, self.start)
-        self.length += 1
+        self.lngth += 1
 
     def print(self): 
         while self.start != None: 
@@ -31,6 +31,7 @@ class LinkedList:
             return True 
     
     def __len__(self): 
-        return self.length
+        return self.lngth
+
 
 
